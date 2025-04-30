@@ -1,0 +1,12 @@
+#cloud-config
+datasource:
+ Ec2:
+  strict_id: false
+ssh_pwauth: no
+users:
+- name: nikita
+  sudo: ALL=(ALL) NOPASSWD:ALL
+  shell: /bin/bash
+  ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFMV4w3Oz0QQKFY3nYM4BNXMmcUyOtSmnq4ZpFO3myPo n.leonov@al-leonov-n.office.sspk.spb.ru-2025-01-22
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKo1PzFWONiyzmkyJFXWIDYAy3zQuyCimmPFTF99eLfY lns@lnsnetol2
